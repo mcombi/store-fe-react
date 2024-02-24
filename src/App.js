@@ -17,10 +17,15 @@ useEffect(() => {
     setAppState({ loading: true });
     const apiUrl = process.env.REACT_APP_ORDER_BACKEND;
 
-    axios.get(apiUrl).then((repos) => {
+    axios.get(apiUrl)
+
+    .then((repos) => {
       const allRepos = repos.data;
       setAppState({ loading: false, repos: allRepos });
-    });
+    })
+    .catch(function(error) {
+            console.log(error);
+         });
   }, [setAppState]);
 
   return (
