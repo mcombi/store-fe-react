@@ -1,5 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif; 
+  margin: 0;
+  padding: 0;
+  background-color: #e3f2fd;
+}
+.container {
+  max-width: 800px;
+  margin: 50px auto 40px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 0px;
+  font-weight: 700; 
+  font-size: 36px; 
+}
+h2 {
+  text-align: center;
+  color: #555;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 400;
+  font-size: 24px; 
+}
+.subtitle {
+  text-align: center;
+  color: #555;
+  margin-bottom: 5px;
+  margin-top: 0px;
+  padding-top: 0px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px; 
+}
+.subtitle img {
+  width: 20px;
+  float: left;
+  right: 0; 
+  top: 50%; 
+  transform: translateY(-50%);
+  margin-left: 5px;
+  align-items: center;
+  margin-top: 16px;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px; 
+}
+li {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  font-size: 18px;
+  color: #555;
+  transition: all 0.3s ease;
+}
+li:hover {
+  background-color: #f9f9f9;
+}
+li:last-child {
+  border-bottom: none;
+}
+.panda-icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url('../public/panda-icon.png');
+  background-size: cover;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/*:root {
   --basic-color: #960019;
 }
 .App {
@@ -78,4 +161,4 @@
 p {
       margin-left: 2em;
       margin-top: 1.5em;
-  }
+  }*/

@@ -30,23 +30,30 @@ useEffect(() => {
 
   return (
 
+
+
+
+
+    
     <div className='App'>
       <pre>{process.env.REACT_APP_ORDER_BACKEND}</pre>
-      <div className='container'>
+      <div className='container' class="container">
 
-        <h1>Quarkus Shop</h1>
+        <h1>Panda Store</h1>
 
-        <img className='quarkusimg' src='img.png'/>
-      </div>
-      <div className='repo-container'>
-        <ListLoading isLoading={appState.loading} repos={appState.repos} />
-      </div>
-      <footer>
-        <div className='footer'>
-
-
+        <div class="subtitle">
+        <p><i>Powered by Red Hat OpenShift</i></p>
+        <img src="openshift-logo.png" alt="OpenShift Logo"></img>
         </div>
-      </footer>
+
+        <h2>How many pandas have been ordered today?</h2>
+
+      
+        <div className='repo-container'>
+        <ListLoading isLoading={appState.loading} repos={appState.repos} />
+        </div>
+
+    </div>
     </div>
   );
 }
