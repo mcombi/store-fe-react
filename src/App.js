@@ -23,7 +23,7 @@ useEffect(() => {
                         headers: {
                           "Cache-Control": "no-cache",
                           "Access-Control-Allow-Origin": "*",
-                        },)
+                        })
 
 
     .then((repos) => {
