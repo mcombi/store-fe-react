@@ -60,7 +60,7 @@ ul {
   margin-top: 20px; 
 }
 li {
-  border-bottom: 1px solid #ccc;
+  /* border-bottom: 1px solid #ccc; */
   padding: 10px 0;
   font-size: 18px;
   color: #555;
@@ -72,15 +72,57 @@ li:hover {
 li:last-child {
   border-bottom: none;
 }
+
+.help3 {
+ width: 10px !important;
+}
+
 .panda-icon {
-  display: inline-block;
   width: 30px;
   height: 30px;
   background-image: url('../public/panda-icon.png');
   background-size: cover;
   margin-right: 10px;
+  margin-left: 50px;
   vertical-align: middle;
 }
+
+.styled-table {
+  width: 100%;
+  /*border-collapse: collapse; */
+  border: 1px solid #ddd;
+}
+
+.styled-table th {
+  padding: 10px;
+  /*border: 1px solid #ddd; */
+  text-align: center;
+  font-weight: bold;
+  width: 25%;
+}
+
+.td1 {
+  width: 179px;
+}
+
+td {
+  padding: 10px;
+  /*border: 1px solid #ddd; */
+  font-weight: light;
+  text-align: center;
+  
+}
+
+.div1 {
+  width: 401%;
+}
+
+
+.styled-table tbody tr:hover {
+  background-color: #ddd;
+}
+
+
 
 /*:root {
   --basic-color: #960019;

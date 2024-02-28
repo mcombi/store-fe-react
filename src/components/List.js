@@ -4,20 +4,39 @@ const List = (props) => {
   const { repos } = props;
   if (!repos || repos.length === 0) return <p>No orders, sorry</p>;
   return (
-    <ul>
-      
+    
+      <table class="styled-table">
+              <tr>
+                <th  class="help3">   </th>
+                <th  class="help3">   </th>
+                <th  class="help3">   </th>
+                <th  class="help3">   </th>
+                
+                <th  className='repo-text'>Quantity:  </th>
+                <th  className='repo-text'> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Provenance:   </th>
+                <th  className='repo-text'>  </th>
+              </tr>
+
+              <tr>
       {repos.map((repo) => {
         return (
-          <li  key={repo.id} className='list'>
-            <span class="panda-icon"></span>
-            <span className='repo-text'>{repo.name} </span>
-             <span className='repo-text'>Item Description: </span><span className='repo-description'> {repo.description}</span>
-             <span className='repo-text'>Quantity:  </span><span className='repo-description'>{repo.quantity}</span>
-             <span className='repo-text'>Category: </span><span className='repo-description'>{repo.itemCategory}</span>
-          </li>
+          
+          <div class="div1">
+            <td class="td1, help">  </td>
+                <td class="td1, panda-icon"> </td>
+                <td class="td1"> {repo.description} </td>
+                <td class="td1">{repo.quantity} </td>
+                <td class="td1">{repo.itemCategory} </td>
+              
+          </div>
+             
+          
+          
         );
       })}
-    </ul>
+      </tr>
+      </table>
+    
   );
 };
 export default List;
