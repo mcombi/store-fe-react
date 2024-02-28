@@ -17,7 +17,14 @@ useEffect(() => {
     setAppState({ loading: true });
     const apiUrl = process.env.REACT_APP_ORDER_BACKEND;
 
-    axios.get(apiUrl)
+    axios
+
+    .get(apiUrl, {
+                        headers: {
+                          "Cache-Control": "no-cache",
+                          "Access-Control-Allow-Origin": "*",
+                        },)
+
 
     .then((repos) => {
       const allRepos = repos.data;
@@ -30,11 +37,6 @@ useEffect(() => {
 
   return (
 
-
-
-
-
-    
     <div className='App'>
       <pre>{process.env.REACT_APP_ORDER_BACKEND}</pre>
       <div className='container' class="container">
