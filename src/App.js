@@ -19,10 +19,9 @@ useEffect(() => {
 
     axios
 
-    .get(apiUrl, {
-                        headers: {
-                          "Cache-Control": "no-cache",
-                          "Access-Control-Allow-Origin": "*",
+    .get(apiUrl, {headers: {
+                          "Access-Control-Allow-Origin": "*"
+                       }
                         })
 
 
